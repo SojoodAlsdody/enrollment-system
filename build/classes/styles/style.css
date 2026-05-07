@@ -1,0 +1,25 @@
+.root {
+    -fx-background-color: #0f172a;
+    -fx-padding: 20;
+    -fx-font-family: "Segoe UI";
+}
+
+.text-field, .date-picker {
+    -fx-background-radius: 8;
+    -fx-padding: 8;
+}
+
+.button {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-padding: 8 15;
+}
+
+.button:hover {
+    -fx-background-color: #2563eb;
+}
+
+.table-view {
+    -fx-background-color: white;
+}

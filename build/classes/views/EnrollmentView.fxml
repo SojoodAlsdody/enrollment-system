@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10"
+      xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="controllers.EnrollmentController">
+
+    <TextField fx:id="studentIdField" promptText="Student ID"/>
+    <TextField fx:id="courseIdField" promptText="Course ID"/>
+    <DatePicker fx:id="datePicker"/>
+
+    <HBox spacing="10">
+
+        <Button text="Add" onAction="#addEnrollment"/>
+        <Button text="Update" onAction="#updateEnrollment"/>
+        <Button text="Delete" onAction="#deleteEnrollment"/>
+        <Button text="View" onAction="#viewEnrollments"/>
+
+    </HBox>
+
+    <TableView fx:id="table">
+
+        <columns>
+
+            <TableColumn fx:id="idColumn" text="ID"/>
+            <TableColumn fx:id="studentColumn" text="Student"/>
+            <TableColumn fx:id="courseColumn" text="Course"/>
+            <TableColumn fx:id="dateColumn" text="Date"/>
+
+        </columns>
+
+    </TableView>
+
+</VBox>
